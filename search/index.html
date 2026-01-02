@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>イベント検索 | GA4 Debug</title>
+
+  <!-- Google Tag Manager -->
+  <script>
+    (function(w,d,s,l,i){w[l]=w[l]||[];
+      w[l].push({'gtm.start': new Date().getTime(),event:'gtm.js'});
+      var f=d.getElementsByTagName(s)[0],
+      j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';
+      j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;
+      f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-NP46PHRL');
+  </script>
+  <!-- End Google Tag Manager -->
+
+  <link rel="stylesheet" href="./css/style.css" />
+</head>
+
+<body>
+  <!-- Google Tag Manager (noscript) -->
+  <noscript>
+    <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NP46PHRL"
+      height="0" width="0" style="display:none;visibility:hidden"></iframe>
+  </noscript>
+  <!-- End Google Tag Manager (noscript) -->
+
+  <h1>イベント検索</h1>
+
+  <!-- 検索条件 -->
+  <section class="filter">
+    <div class="checkbox-group">
+      <label>
+        <input type="checkbox" name="holiday" />
+        祝日
+      </label>
+      <label>
+        <input type="checkbox" name="zorome" />
+        ゾロ目
+      </label>
+    </div>
+
+    <div class="sort">
+      <label>
+        並び替え：
+        <select name="sort">
+          <option value="kana">あいうえお順</option>
+          <option value="date">日付順</option>
+        </select>
+      </label>
+    </div>
+  </section>
+
+  <!-- カード一覧 -->
+  <section class="card-list">
+
+    <article class="card" data-holiday="true" data-zorome="true">
+      <h2>正月</h2>
+      <p class="date">1月1日</p>
+      <a href="./shougatsu.html" class="detail-btn">詳細を見る</a>
+    </article>
+
+    <article class="card" data-holiday="false" data-zorome="true">
+      <h2>節分</h2>
+      <p class="date">2月3日</p>
+      <a href="./setsubun.html" class="detail-btn">詳細を見る</a>
+    </article>
+
+    <article class="card" data-holiday="true" data-zorome="false">
+      <h2>春分の日</h2>
+      <p class="date">3月20日</p>
+      <a href="./shunbun.html" class="detail-btn">詳細を見る</a>
+    </article>
+
+    <article class="card" data-holiday="false" data-zorome="true">
+      <h2>ひなまつり</h2>
+      <p class="date">3月3日</p>
+      <a href="./hina.html" class="detail-btn">詳細を見る</a>
+    </article>
+
+    <article class="card" data-holiday="true" data-zorome="true">
+      <h2>こどもの日</h2>
+      <p class="date">5月5日</p>
+      <a href="./kodomo.html" class="detail-btn">詳細を見る</a>
+    </article>
+
+    <article class="card" data-holiday="true" data-zorome="false">
+      <h2>海の日</h2>
+      <p class="date">7月15日</p>
+      <a href="./umi.html" class="detail-btn">詳細を見る</a>
+    </article>
+
+    <article class="card" data-holiday="true" data-zorome="true">
+      <h2>山の日</h2>
+      <p class="date">8月11日</p>
+      <a href="./yama.html" class="detail-btn">詳細を見る</a>
+    </article>
+
+    <article class="card" data-holiday="true" data-zorome="false">
+      <h2>体育の日</h2>
+      <p class="date">10月14日</p>
+      <a href="./taiiku.html" class="detail-btn">詳細を見る</a>
+    </article>
+
+    <article class="card" data-holiday="true" data-zorome="false">
+      <h2>勤労感謝の日</h2>
+      <p class="date">11月23日</p>
+      <a href="./kinrou.html" class="detail-btn">詳細を見る</a>
+    </article>
+
+    <article class="card" data-holiday="false" data-zorome="false">
+      <h2>クリスマス</h2>
+      <p class="date">12月25日</p>
+      <a href="./christmas.html" class="detail-btn">詳細を見る</a>
+    </article>
+
+  </section>
+</body>
+</html>
