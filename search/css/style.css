@@ -1,0 +1,55 @@
+body {
+  font-family: sans-serif;
+  margin: 20px;
+  background-color: #fafafa;
+}
+
+h1 {
+  margin-bottom: 20px;
+}
+
+.filter {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 24px;
+  padding: 12px;
+  background: #fff;
+  border: 1px solid #ddd;
+}
+
+.checkbox-group label {
+  margin-right: 16px;
+}
+
+.card-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 16px;
+}
+
+.card {
+  background: #fff;
+  border: 1px solid #ddd;
+  padding: 16px;
+}
+
+.card h2 {
+  font-size: 16px;
+  margin-bottom: 8px;
+}
+
+.date {
+  font-size: 14px;
+  color: #666;
+  margin-bottom: 12px;
+}
+
+.detail-btn {
+  display: inline-block;
+  padding: 6px 12px;
+  background: #007acc;
+  color: #fff;
+  text-decoration: none;
+  font-size: 14px;
+}
