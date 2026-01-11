@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>イベント検索 | GA4 Debug</title>
+  <title>税金一覧 | GA4 Debug</title>
 
   <!-- Google Tag Manager -->
   <script>
@@ -38,84 +38,194 @@
   <script src="/web-learning3/common/header.js"></script>
 
   <main>
-    <h1>イベント検索</h1>
+    <h1>税金の種類一覧</h1>
 
     <!-- 絞り込み・並び替え -->
     <section class="filter">
+
+      <!-- 課税主体 -->
       <div class="checkbox-group">
-        <label>
-          <input type="checkbox" name="holiday">
-          祝日
-        </label>
-        <label>
-          <input type="checkbox" name="zorome">
-          ゾロ目
-        </label>
+        <strong>課税主体：</strong>
+        <label><input type="checkbox" name="authority" value="国税"> 国税</label>
+        <label><input type="checkbox" name="authority" value="地方税"> 地方税</label>
       </div>
 
+      <!-- 課税対象 -->
+      <div class="checkbox-group">
+        <strong>課税対象：</strong>
+        <label><input type="checkbox" name="category" value="所得課税"> 所得課税</label>
+        <label><input type="checkbox" name="category" value="資産課税等"> 資産課税等</label>
+        <label><input type="checkbox" name="category" value="消費課税"> 消費課税</label>
+      </div>
+
+      <!-- 並び替え -->
       <div class="sort">
         <label>
           並び替え：
           <select name="sort">
             <option value="kana">あいうえお順</option>
-            <option value="date">日付順</option>
           </select>
         </label>
       </div>
     </section>
 
     <!-- カード一覧 -->
-    <section class="card-list">
+   <section class="card-list">
 
-      <article class="card" data-holiday="true" data-zorome="true" data-kana="しょうがつ" data-date="0101">
-        <h2>正月</h2>
-        <p class="date">1月1日</p>
-        <a href="./shougatsu.html">詳細を見る</a>
-      </article>
+<!-- ========== 所得課税 / 国税 ========== -->
+<article class="card" data-authority="国税" data-category="所得課税" data-kana="しょとくぜい">
+  <h2>所得税</h2><p>課税主体：国税</p><p>課税対象：所得課税</p><button>詳細を見る</button>
+</article>
+<article class="card" data-authority="国税" data-category="所得課税" data-kana="ほうじんぜい">
+  <h2>法人税</h2><p>課税主体：国税</p><p>課税対象：所得課税</p><button>詳細を見る</button>
+</article>
+<article class="card" data-authority="国税" data-category="所得課税" data-kana="ちほうほうじんぜい">
+  <h2>地方法人税</h2><p>課税主体：国税</p><p>課税対象：所得課税</p><button>詳細を見る</button>
+</article>
+<article class="card" data-authority="国税" data-category="所得課税" data-kana="とくべつほうじんじぎょうぜい">
+  <h2>特別法人事業税</h2><p>課税主体：国税</p><p>課税対象：所得課税</p><button>詳細を見る</button>
+</article>
+<article class="card" data-authority="国税" data-category="所得課税" data-kana="ふっこうとくべつしょとくぜい">
+  <h2>復興特別所得税</h2><p>課税主体：国税</p><p>課税対象：所得課税</p><button>詳細を見る</button>
+</article>
+<article class="card" data-authority="国税" data-category="所得課税" data-kana="しんりんかんきょうぜい">
+  <h2>森林環境税</h2><p>課税主体：国税</p><p>課税対象：所得課税</p><button>詳細を見る</button>
+</article>
 
-      <article class="card" data-holiday="false" data-zorome="true" data-kana="せつぶん" data-date="0203">
-        <h2>節分</h2>
-        <p class="date">2月3日</p>
-        <a href="./setsubun.html">詳細を見る</a>
-      </article>
+<!-- ========== 所得課税 / 地方税 ========== -->
+<article class="card" data-authority="地方税" data-category="所得課税" data-kana="じゅうみんぜい">
+  <h2>住民税</h2><p>課税主体：地方税</p><p>課税対象：所得課税</p><button>詳細を見る</button>
+</article>
+<article class="card" data-authority="地方税" data-category="所得課税" data-kana="じぎょうぜい">
+  <h2>事業税</h2><p>課税主体：地方税</p><p>課税対象：所得課税</p><button>詳細を見る</button>
+</article>
 
-      <article class="card" data-holiday="true" data-zorome="false" data-kana="しゅんぶんのひ" data-date="0320">
-        <h2>春分の日</h2>
-        <p class="date">3月20日</p>
-        <a href="./shunbun.html">詳細を見る</a>
-      </article>
+<!-- ========== 消費課税 / 国税 ========== -->
+<article class="card" data-authority="国税" data-category="消費課税" data-kana="しょうひぜい">
+  <h2>消費税</h2><p>課税主体：国税</p><p>課税対象：消費課税</p><button>詳細を見る</button>
+</article>
+<article class="card" data-authority="国税" data-category="消費課税" data-kana="しゅぜい">
+  <h2>酒税</h2><p>課税主体：国税</p><p>課税対象：消費課税</p><button>詳細を見る</button>
+</article>
+<article class="card" data-authority="国税" data-category="消費課税" data-kana="たばこぜい">
+  <h2>たばこ税</h2><p>課税主体：国税</p><p>課税対象：消費課税</p><button>詳細を見る</button>
+</article>
+<article class="card" data-authority="国税" data-category="消費課税" data-kana="たばことくべつぜい">
+  <h2>たばこ特別税</h2><p>課税主体：国税</p><p>課税対象：消費課税</p><button>詳細を見る</button>
+</article>
+<article class="card" data-authority="国税" data-category="消費課税" data-kana="きはつゆぜい">
+  <h2>揮発油税</h2><p>課税主体：国税</p><p>課税対象：消費課税</p><button>詳細を見る</button>
+</article>
+<article class="card" data-authority="国税" data-category="消費課税" data-kana="ちほうきはつゆぜい">
+  <h2>地方揮発油税</h2><p>課税主体：国税</p><p>課税対象：消費課税</p><button>詳細を見る</button>
+</article>
+<article class="card" data-authority="国税" data-category="消費課税" data-kana="せきゆがすぜい">
+  <h2>石油ガス税</h2><p>課税主体：国税</p><p>課税対象：消費課税</p><button>詳細を見る</button>
+</article>
+<article class="card" data-authority="国税" data-category="消費課税" data-kana="こうくうきねんりょうぜい">
+  <h2>航空機燃料税</h2><p>課税主体：国税</p><p>課税対象：消費課税</p><button>詳細を見る</button>
+</article>
+<article class="card" data-authority="国税" data-category="消費課税" data-kana="せきゆせきたんぜい">
+  <h2>石油石炭税</h2><p>課税主体：国税</p><p>課税対象：消費課税</p><button>詳細を見る</button>
+</article>
+<article class="card" data-authority="国税" data-category="消費課税" data-kana="でんげんかいはつそくしんぜい">
+  <h2>電源開発促進税</h2><p>課税主体：国税</p><p>課税対象：消費課税</p><button>詳細を見る</button>
+</article>
+<article class="card" data-authority="国税" data-category="消費課税" data-kana="じどうしゃじゅうりょうぜい">
+  <h2>自動車重量税</h2><p>課税主体：国税</p><p>課税対象：消費課税</p><button>詳細を見る</button>
+</article>
+<article class="card" data-authority="国税" data-category="消費課税" data-kana="こくさいかんこうりょかくぜい">
+  <h2>国際観光旅客税</h2><p>課税主体：国税</p><p>課税対象：消費課税</p><button>詳細を見る</button>
+</article>
+<article class="card" data-authority="国税" data-category="消費課税" data-kana="かんぜい">
+  <h2>関税</h2><p>課税主体：国税</p><p>課税対象：消費課税</p><button>詳細を見る</button>
+</article>
+<article class="card" data-authority="国税" data-category="消費課税" data-kana="とんぜい">
+  <h2>とん税</h2><p>課税主体：国税</p><p>課税対象：消費課税</p><button>詳細を見る</button>
+</article>
+<article class="card" data-authority="国税" data-category="消費課税" data-kana="とくべつとんぜい">
+  <h2>特別とん税</h2><p>課税主体：国税</p><p>課税対象：消費課税</p><button>詳細を見る</button>
+</article>
 
-      <article class="card" data-holiday="false" data-zorome="true" data-kana="ひなまつり" data-date="0303">
-        <h2>ひなまつり</h2>
-        <p class="date">3月3日</p>
-        <a href="./hina.html">詳細を見る</a>
-      </article>
+<!-- ========== 消費課税 / 地方税 ========== -->
+<article class="card" data-authority="地方税" data-category="消費課税" data-kana="ちほうしょうひぜい">
+  <h2>地方消費税</h2><p>課税主体：地方税</p><p>課税対象：消費課税</p><button>詳細を見る</button>
+</article>
+<article class="card" data-authority="地方税" data-category="消費課税" data-kana="ちほうたばこぜい">
+  <h2>地方たばこ税</h2><p>課税主体：地方税</p><p>課税対象：消費課税</p><button>詳細を見る</button>
+</article>
+<article class="card" data-authority="地方税" data-category="消費課税" data-kana="ごるふじょうりようぜい">
+  <h2>ゴルフ場利用税</h2><p>課税主体：地方税</p><p>課税対象：消費課税</p><button>詳細を見る</button>
+</article>
+<article class="card" data-authority="地方税" data-category="消費課税" data-kana="けいゆひきとりぜい">
+  <h2>軽油引取税</h2><p>課税主体：地方税</p><p>課税対象：消費課税</p><button>詳細を見る</button>
+</article>
+<article class="card" data-authority="地方税" data-category="消費課税" data-kana="じどうしゃぜい">
+  <h2>自動車税（環境性能割・種別割）</h2><p>課税主体：地方税</p><p>課税対象：消費課税</p><button>詳細を見る</button>
+</article>
+<article class="card" data-authority="地方税" data-category="消費課税" data-kana="けいじどうしゃぜい">
+  <h2>軽自動車税（環境性能割・種別割）</h2><p>課税主体：地方税</p><p>課税対象：消費課税</p><button>詳細を見る</button>
+</article>
+<article class="card" data-authority="地方税" data-category="消費課税" data-kana="こうくぜい">
+  <h2>鉱区税</h2><p>課税主体：地方税</p><p>課税対象：消費課税</p><button>詳細を見る</button>
+</article>
+<article class="card" data-authority="地方税" data-category="消費課税" data-kana="しゅりょうぜい">
+  <h2>狩猟税</h2><p>課税主体：地方税</p><p>課税対象：消費課税</p><button>詳細を見る</button>
+</article>
+<article class="card" data-authority="地方税" data-category="消費課税" data-kana="こうさんぜい">
+  <h2>鉱産税</h2><p>課税主体：地方税</p><p>課税対象：消費課税</p><button>詳細を見る</button>
+</article>
+<article class="card" data-authority="地方税" data-category="消費課税" data-kana="にゅうとうぜい">
+  <h2>入湯税</h2><p>課税主体：地方税</p><p>課税対象：消費課税</p><button>詳細を見る</button>
+</article>
 
-      <article class="card" data-holiday="true" data-zorome="true" data-kana="こどものひ" data-date="0505">
-        <h2>こどもの日</h2>
-        <p class="date">5月5日</p>
-        <a href="./kodomo.html">詳細を見る</a>
-      </article>
+<!-- ========== 資産課税等 / 国税 ========== -->
+<article class="card" data-authority="国税" data-category="資産課税等" data-kana="そうぞくぜい">
+  <h2>相続税・贈与税</h2><p>課税主体：国税</p><p>課税対象：資産課税等</p><button>詳細を見る</button>
+</article>
+<article class="card" data-authority="国税" data-category="資産課税等" data-kana="とうろくめんきょぜい">
+  <h2>登録免許税</h2><p>課税主体：国税</p><p>課税対象：資産課税等</p><button>詳細を見る</button>
+</article>
+<article class="card" data-authority="国税" data-category="資産課税等" data-kana="いんしぜい">
+  <h2>印紙税</h2><p>課税主体：国税</p><p>課税対象：資産課税等</p><button>詳細を見る</button>
+</article>
 
-      <article class="card" data-holiday="true" data-zorome="true" data-kana="やまのひ" data-date="0811">
-        <h2>山の日</h2>
-        <p class="date">8月11日</p>
-        <a href="./yama.html">詳細を見る</a>
-      </article>
+<!-- ========== 資産課税等 / 地方税 ========== -->
+<article class="card" data-authority="地方税" data-category="資産課税等" data-kana="ふどうさんしゅとくぜい">
+  <h2>不動産取得税</h2><p>課税主体：地方税</p><p>課税対象：資産課税等</p><button>詳細を見る</button>
+</article>
+<article class="card" data-authority="地方税" data-category="資産課税等" data-kana="こていしさんぜい">
+  <h2>固定資産税</h2><p>課税主体：地方税</p><p>課税対象：資産課税等</p><button>詳細を見る</button>
+</article>
+<article class="card" data-authority="地方税" data-category="資産課税等" data-kana="とくべつとちほゆうぜい">
+  <h2>特別土地保有税</h2><p>課税主体：地方税</p><p>課税対象：資産課税等</p><button>詳細を見る</button>
+</article>
+<article class="card" data-authority="地方税" data-category="資産課税等" data-kana="ほうていがいふつうぜい">
+  <h2>法定外普通税</h2><p>課税主体：地方税</p><p>課税対象：資産課税等</p><button>詳細を見る</button>
+</article>
+<article class="card" data-authority="地方税" data-category="資産課税等" data-kana="じぎょうしょぜい">
+  <h2>事業所税</h2><p>課税主体：地方税</p><p>課税対象：資産課税等</p><button>詳細を見る</button>
+</article>
+<article class="card" data-authority="地方税" data-category="資産課税等" data-kana="としけいかくぜい">
+  <h2>都市計画税</h2><p>課税主体：地方税</p><p>課税対象：資産課税等</p><button>詳細を見る</button>
+</article>
+<article class="card" data-authority="地方税" data-category="資産課税等" data-kana="すいりちえきぜい">
+  <h2>水利地益税</h2><p>課税主体：地方税</p><p>課税対象：資産課税等</p><button>詳細を見る</button>
+</article>
+<article class="card" data-authority="地方税" data-category="資産課税等" data-kana="きょうどうしせつぜい">
+  <h2>共同施設税</h2><p>課税主体：地方税</p><p>課税対象：資産課税等</p><button>詳細を見る</button>
+</article>
+<article class="card" data-authority="地方税" data-category="資産課税等" data-kana="たくちかいはつぜい">
+  <h2>宅地開発税</h2><p>課税主体：地方税</p><p>課税対象：資産課税等</p><button>詳細を見る</button>
+</article>
+<article class="card" data-authority="地方税" data-category="資産課税等" data-kana="こくみんけんこうほけんぜい">
+  <h2>国民健康保険税</h2><p>課税主体：地方税</p><p>課税対象：資産課税等</p><button>詳細を見る</button>
+</article>
+<article class="card" data-authority="地方税" data-category="資産課税等" data-kana="ほうていがいもくてきぜい">
+  <h2>法定外目的税</h2><p>課税主体：地方税</p><p>課税対象：資産課税等</p><button>詳細を見る</button>
+</article>
 
-      <article class="card" data-holiday="true" data-zorome="false" data-kana="きんろうかんしゃのひ" data-date="1123">
-        <h2>勤労感謝の日</h2>
-        <p class="date">11月23日</p>
-        <a href="./kinrou.html">詳細を見る</a>
-      </article>
-
-      <article class="card" data-holiday="false" data-zorome="false" data-kana="くりすます" data-date="1225">
-        <h2>クリスマス</h2>
-        <p class="date">12月25日</p>
-        <a href="./christmas.html">詳細を見る</a>
-      </article>
-
-    </section>
+</section>
   </main>
 
   <!-- 共通フッター -->
@@ -123,46 +233,7 @@
   <script src="/web-learning3/common/footer.js"></script>
 
   <!-- 絞り込み・並び替えJS -->
-  <script>
-    document.addEventListener("DOMContentLoaded", () => {
-      const holidayCheckbox = document.querySelector('input[name="holiday"]');
-      const zoromeCheckbox = document.querySelector('input[name="zorome"]');
-      const sortSelect = document.querySelector('select[name="sort"]');
-      const cardList = document.querySelector(".card-list");
-      const cards = Array.from(document.querySelectorAll(".card"));
-
-      function filterCards() {
-        cards.forEach(card => {
-          const isHoliday = card.dataset.holiday === "true";
-          const isZorome = card.dataset.zorome === "true";
-
-          let visible = true;
-          if (holidayCheckbox.checked && !isHoliday) visible = false;
-          if (zoromeCheckbox.checked && !isZorome) visible = false;
-
-          card.style.display = visible ? "block" : "none";
-        });
-      }
-
-      function sortCards() {
-        const value = sortSelect.value;
-        const sorted = [...cards].sort((a, b) => {
-          if (value === "kana") {
-            return a.dataset.kana.localeCompare(b.dataset.kana, "ja");
-          }
-          if (value === "date") {
-            return a.dataset.date.localeCompare(b.dataset.date);
-          }
-          return 0;
-        });
-        sorted.forEach(card => cardList.appendChild(card));
-      }
-
-      holidayCheckbox.addEventListener("change", filterCards);
-      zoromeCheckbox.addEventListener("change", filterCards);
-      sortSelect.addEventListener("change", sortCards);
-    });
-  </script>
+  <script src="./filter.js"></script>
 
 </body>
 </html>
