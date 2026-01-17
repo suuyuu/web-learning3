@@ -38,24 +38,16 @@
   <script src="/web-learning3/common/header.js"></script>
 
   <main>
-    <h1>税金の種類一覧</h1>
+    <h1>東京23区一覧</h1>
 
     <!-- 絞り込み・並び替え -->
     <section class="filter">
 
-      <!-- 課税主体 -->
+      <!-- 文字数 -->
       <div class="checkbox-group">
-        <strong>課税主体：</strong>
-        <label><input type="checkbox" name="authority" value="国税"> 国税</label>
-        <label><input type="checkbox" name="authority" value="地方税"> 地方税</label>
-      </div>
-
-      <!-- 課税対象 -->
-      <div class="checkbox-group">
-        <strong>課税対象：</strong>
-        <label><input type="checkbox" name="category" value="所得課税"> 所得課税</label>
-        <label><input type="checkbox" name="category" value="資産課税等"> 資産課税等</label>
-        <label><input type="checkbox" name="category" value="消費課税"> 消費課税</label>
+        <label><input type="checkbox" name="authority" value="1文字"> 2文字</label>
+        <label><input type="checkbox" name="authority" value="2文字"> 3文字</label>
+        <label><input type="checkbox" name="authority" value="3文字"> 4文字</label>
       </div>
 
       <!-- 並び替え -->
@@ -72,157 +64,101 @@
     <!-- カード一覧 -->
    <section class="card-list">
 
-<!-- ========== 所得課税 / 国税 ========== -->
-<article class="card" data-authority="国税" data-category="所得課税" data-kana="しょとくぜい">
-  <h2>所得税</h2><p>課税主体：国税</p><p>課税対象：所得課税</p><a href="https://example.com" target="_blank" rel="noopener noreferrer" class="btn">詳細を見る</a>
-</article>
-<article class="card" data-authority="国税" data-category="所得課税" data-kana="ほうじんぜい">
-  <h2>法人税</h2><p>課税主体：国税</p><p>課税対象：所得課税</p><a href="https://example.com" target="_blank" rel="noopener noreferrer" class="btn">詳細を見る</a>
-</article>
-<article class="card" data-authority="国税" data-category="所得課税" data-kana="ちほうほうじんぜい">
-  <h2>地方法人税</h2><p>課税主体：国税</p><p>課税対象：所得課税</p><a href="https://example.com" target="_blank" rel="noopener noreferrer" class="btn">詳細を見る</a>
-</article>
-<article class="card" data-authority="国税" data-category="所得課税" data-kana="とくべつほうじんじぎょうぜい">
-  <h2>特別法人事業税</h2><p>課税主体：国税</p><p>課税対象：所得課税</p><a href="https://example.com" target="_blank" rel="noopener noreferrer" class="btn">詳細を見る</a>
-</article>
-<article class="card" data-authority="国税" data-category="所得課税" data-kana="ふっこうとくべつしょとくぜい">
-  <h2>復興特別所得税</h2><p>課税主体：国税</p><p>課税対象：所得課税</p><a href="https://example.com" target="_blank" rel="noopener noreferrer" class="btn">詳細を見る</a>
-</article>
-<article class="card" data-authority="国税" data-category="所得課税" data-kana="しんりんかんきょうぜい">
-  <h2>森林環境税</h2><p>課税主体：国税</p><p>課税対象：所得課税</p><a href="https://example.com" target="_blank" rel="noopener noreferrer" class="btn">詳細を見る</a>
+<!-- ========== 区 ========== -->
+<article class="card" data-authority="3文字" data-kana="あだち">
+  <h2>足立区</h2><a href="https://www.city.adachi.tokyo.jp/" target="_blank" rel="noopener noreferrer" class="btn">詳細を見る</a>
 </article>
 
-<!-- ========== 所得課税 / 地方税 ========== -->
-<article class="card" data-authority="地方税" data-category="所得課税" data-kana="じゅうみんぜい">
-  <h2>住民税</h2><p>課税主体：地方税</p><p>課税対象：所得課税</p><a href="https://example.com" target="_blank" rel="noopener noreferrer" class="btn">詳細を見る</a>
-</article>
-<article class="card" data-authority="地方税" data-category="所得課税" data-kana="じぎょうぜい">
-  <h2>事業税</h2><p>課税主体：地方税</p><p>課税対象：所得課税</p><a href="https://example.com" target="_blank" rel="noopener noreferrer" class="btn">詳細を見る</a>
+<article class="card" data-authority="3文字" data-kana="あらかわ">
+  <h2>荒川区</h2><a href="https://www.city.arakawa.tokyo.jp/" target="_blank" rel="noopener noreferrer" class="btn">詳細を見る</a>
 </article>
 
-<!-- ========== 消費課税 / 国税 ========== -->
-<article class="card" data-authority="国税" data-category="消費課税" data-kana="しょうひぜい">
-  <h2>消費税</h2><p>課税主体：国税</p><p>課税対象：消費課税</p><a href="https://example.com" target="_blank" rel="noopener noreferrer" class="btn">詳細を見る</a>
-</article>
-<article class="card" data-authority="国税" data-category="消費課税" data-kana="しゅぜい">
-  <h2>酒税</h2><p>課税主体：国税</p><p>課税対象：消費課税</p><a href="https://example.com" target="_blank" rel="noopener noreferrer" class="btn">詳細を見る</a>
-</article>
-<article class="card" data-authority="国税" data-category="消費課税" data-kana="たばこぜい">
-  <h2>たばこ税</h2><p>課税主体：国税</p><p>課税対象：消費課税</p><a href="https://example.com" target="_blank" rel="noopener noreferrer" class="btn">詳細を見る</a>
-</article>
-<article class="card" data-authority="国税" data-category="消費課税" data-kana="たばことくべつぜい">
-  <h2>たばこ特別税</h2><p>課税主体：国税</p><p>課税対象：消費課税</p><a href="https://example.com" target="_blank" rel="noopener noreferrer" class="btn">詳細を見る</a>
-</article>
-<article class="card" data-authority="国税" data-category="消費課税" data-kana="きはつゆぜい">
-  <h2>揮発油税</h2><p>課税主体：国税</p><p>課税対象：消費課税</p><a href="https://example.com" target="_blank" rel="noopener noreferrer" class="btn">詳細を見る</a>
-</article>
-<article class="card" data-authority="国税" data-category="消費課税" data-kana="ちほうきはつゆぜい">
-  <h2>地方揮発油税</h2><p>課税主体：国税</p><p>課税対象：消費課税</p><a href="https://example.com" target="_blank" rel="noopener noreferrer" class="btn">詳細を見る</a>
-</article>
-<article class="card" data-authority="国税" data-category="消費課税" data-kana="せきゆがすぜい">
-  <h2>石油ガス税</h2><p>課税主体：国税</p><p>課税対象：消費課税</p><a href="https://example.com" target="_blank" rel="noopener noreferrer" class="btn">詳細を見る</a>
-</article>
-<article class="card" data-authority="国税" data-category="消費課税" data-kana="こうくうきねんりょうぜい">
-  <h2>航空機燃料税</h2><p>課税主体：国税</p><p>課税対象：消費課税</p><a href="https://example.com" target="_blank" rel="noopener noreferrer" class="btn">詳細を見る</a>
-</article>
-<article class="card" data-authority="国税" data-category="消費課税" data-kana="せきゆせきたんぜい">
-  <h2>石油石炭税</h2><p>課税主体：国税</p><p>課税対象：消費課税</p><a href="https://example.com" target="_blank" rel="noopener noreferrer" class="btn">詳細を見る</a>
-</article>
-<article class="card" data-authority="国税" data-category="消費課税" data-kana="でんげんかいはつそくしんぜい">
-  <h2>電源開発促進税</h2><p>課税主体：国税</p><p>課税対象：消費課税</p><a href="https://example.com" target="_blank" rel="noopener noreferrer" class="btn">詳細を見る</a>
-</article>
-<article class="card" data-authority="国税" data-category="消費課税" data-kana="じどうしゃじゅうりょうぜい">
-  <h2>自動車重量税</h2><p>課税主体：国税</p><p>課税対象：消費課税</p><a href="https://example.com" target="_blank" rel="noopener noreferrer" class="btn">詳細を見る</a>
-</article>
-<article class="card" data-authority="国税" data-category="消費課税" data-kana="こくさいかんこうりょかくぜい">
-  <h2>国際観光旅客税</h2><p>課税主体：国税</p><p>課税対象：消費課税</p><a href="https://example.com" target="_blank" rel="noopener noreferrer" class="btn">詳細を見る</a>
-</article>
-<article class="card" data-authority="国税" data-category="消費課税" data-kana="かんぜい">
-  <h2>関税</h2><p>課税主体：国税</p><p>課税対象：消費課税</p><a href="https://example.com" target="_blank" rel="noopener noreferrer" class="btn">詳細を見る</a>
-</article>
-<article class="card" data-authority="国税" data-category="消費課税" data-kana="とんぜい">
-  <h2>とん税</h2><p>課税主体：国税</p><p>課税対象：消費課税</p><a href="https://example.com" target="_blank" rel="noopener noreferrer" class="btn">詳細を見る</a>
-</article>
-<article class="card" data-authority="国税" data-category="消費課税" data-kana="とくべつとんぜい">
-  <h2>特別とん税</h2><p>課税主体：国税</p><p>課税対象：消費課税</p><a href="https://example.com" target="_blank" rel="noopener noreferrer" class="btn">詳細を見る</a>
+<article class="card" data-authority="3文字" data-kana="いたばし">
+  <h2>板橋区</h2><a href="https://www.city.itabashi.tokyo.jp/" target="_blank" rel="noopener noreferrer" class="btn">詳細を見る</a>
 </article>
 
-<!-- ========== 消費課税 / 地方税 ========== -->
-<article class="card" data-authority="地方税" data-category="消費課税" data-kana="ちほうしょうひぜい">
-  <h2>地方消費税</h2><p>課税主体：地方税</p><p>課税対象：消費課税</p><a href="https://example.com" target="_blank" rel="noopener noreferrer" class="btn">詳細を見る</a>
-</article>
-<article class="card" data-authority="地方税" data-category="消費課税" data-kana="ちほうたばこぜい">
-  <h2>地方たばこ税</h2><p>課税主体：地方税</p><p>課税対象：消費課税</p><a href="https://example.com" target="_blank" rel="noopener noreferrer" class="btn">詳細を見る</a>
-</article>
-<article class="card" data-authority="地方税" data-category="消費課税" data-kana="ごるふじょうりようぜい">
-  <h2>ゴルフ場利用税</h2><p>課税主体：地方税</p><p>課税対象：消費課税</p><a href="https://example.com" target="_blank" rel="noopener noreferrer" class="btn">詳細を見る</a>
-</article>
-<article class="card" data-authority="地方税" data-category="消費課税" data-kana="けいゆひきとりぜい">
-  <h2>軽油引取税</h2><p>課税主体：地方税</p><p>課税対象：消費課税</p><a href="https://example.com" target="_blank" rel="noopener noreferrer" class="btn">詳細を見る</a>
-</article>
-<article class="card" data-authority="地方税" data-category="消費課税" data-kana="じどうしゃぜい">
-  <h2>自動車税（環境性能割・種別割）</h2><p>課税主体：地方税</p><p>課税対象：消費課税</p><a href="https://example.com" target="_blank" rel="noopener noreferrer" class="btn">詳細を見る</a>
-</article>
-<article class="card" data-authority="地方税" data-category="消費課税" data-kana="けいじどうしゃぜい">
-  <h2>軽自動車税（環境性能割・種別割）</h2><p>課税主体：地方税</p><p>課税対象：消費課税</p><a href="https://example.com" target="_blank" rel="noopener noreferrer" class="btn">詳細を見る</a>
-</article>
-<article class="card" data-authority="地方税" data-category="消費課税" data-kana="こうくぜい">
-  <h2>鉱区税</h2><p>課税主体：地方税</p><p>課税対象：消費課税</p><a href="https://example.com" target="_blank" rel="noopener noreferrer" class="btn">詳細を見る</a>
-</article>
-<article class="card" data-authority="地方税" data-category="消費課税" data-kana="しゅりょうぜい">
-  <h2>狩猟税</h2><p>課税主体：地方税</p><p>課税対象：消費課税</p><a href="https://example.com" target="_blank" rel="noopener noreferrer" class="btn">詳細を見る</a>
-</article>
-<article class="card" data-authority="地方税" data-category="消費課税" data-kana="こうさんぜい">
-  <h2>鉱産税</h2><p>課税主体：地方税</p><p>課税対象：消費課税</p><a href="https://example.com" target="_blank" rel="noopener noreferrer" class="btn">詳細を見る</a>
-</article>
-<article class="card" data-authority="地方税" data-category="消費課税" data-kana="にゅうとうぜい">
-  <h2>入湯税</h2><p>課税主体：地方税</p><p>課税対象：消費課税</p><a href="https://example.com" target="_blank" rel="noopener noreferrer" class="btn">詳細を見る</a>
+<article class="card" data-authority="4文字" data-kana="えどがわ">
+  <h2>江戸川区</h2><a href="https://www.city.edogawa.tokyo.jp/" target="_blank" rel="noopener noreferrer" class="btn">詳細を見る</a>
 </article>
 
-<!-- ========== 資産課税等 / 国税 ========== -->
-<article class="card" data-authority="国税" data-category="資産課税等" data-kana="そうぞくぜい">
-  <h2>相続税・贈与税</h2><p>課税主体：国税</p><p>課税対象：資産課税等</p><a href="https://example.com" target="_blank" rel="noopener noreferrer" class="btn">詳細を見る</a>
-</article>
-<article class="card" data-authority="国税" data-category="資産課税等" data-kana="とうろくめんきょぜい">
-  <h2>登録免許税</h2><p>課税主体：国税</p><p>課税対象：資産課税等</p><a href="https://example.com" target="_blank" rel="noopener noreferrer" class="btn">詳細を見る</a>
-</article>
-<article class="card" data-authority="国税" data-category="資産課税等" data-kana="いんしぜい">
-  <h2>印紙税</h2><p>課税主体：国税</p><p>課税対象：資産課税等</p><a href="https://example.com" target="_blank" rel="noopener noreferrer" class="btn">詳細を見る</a>
+<article class="card" data-authority="3文字" data-kana="おおた">
+  <h2>大田区</h2><a href="https://www.city.ota.tokyo.jp/" target="_blank" rel="noopener noreferrer" class="btn">詳細を見る</a>
 </article>
 
-<!-- ========== 資産課税等 / 地方税 ========== -->
-<article class="card" data-authority="地方税" data-category="資産課税等" data-kana="ふどうさんしゅとくぜい">
-  <h2>不動産取得税</h2><p>課税主体：地方税</p><p>課税対象：資産課税等</p><a href="https://example.com" target="_blank" rel="noopener noreferrer" class="btn">詳細を見る</a>
+<article class="card" data-authority="3文字" data-kana="かつしか">
+  <h2>葛飾区</h2><a href="https://www.city.katsushika.lg.jp/" target="_blank" rel="noopener noreferrer" class="btn">詳細を見る</a>
 </article>
-<article class="card" data-authority="地方税" data-category="資産課税等" data-kana="こていしさんぜい">
-  <h2>固定資産税</h2><p>課税主体：地方税</p><p>課税対象：資産課税等</p><a href="https://example.com" target="_blank" rel="noopener noreferrer" class="btn">詳細を見る</a>
+
+<article class="card" data-authority="2文字" data-kana="きた">
+  <h2>北区</h2><a href="https://www.city.kita.tokyo.jp/" target="_blank" rel="noopener noreferrer" class="btn">詳細を見る</a>
 </article>
-<article class="card" data-authority="地方税" data-category="資産課税等" data-kana="とくべつとちほゆうぜい">
-  <h2>特別土地保有税</h2><p>課税主体：地方税</p><p>課税対象：資産課税等</p><a href="https://example.com" target="_blank" rel="noopener noreferrer" class="btn">詳細を見る</a>
+
+<article class="card" data-authority="3文字" data-kana="こうとう">
+  <h2>江東区</h2><a href="https://www.city.koto.lg.jp/" target="_blank" rel="noopener noreferrer" class="btn">詳細を見る</a>
 </article>
-<article class="card" data-authority="地方税" data-category="資産課税等" data-kana="ほうていがいふつうぜい">
-  <h2>法定外普通税</h2><p>課税主体：地方税</p><p>課税対象：資産課税等</p><a href="https://example.com" target="_blank" rel="noopener noreferrer" class="btn">詳細を見る</a>
+
+<article class="card" data-authority="3文字" data-kana="しながわ">
+  <h2>品川区</h2><a href="https://www.city.shinagawa.tokyo.jp/" target="_blank" rel="noopener noreferrer" class="btn">詳細を見る</a>
 </article>
-<article class="card" data-authority="地方税" data-category="資産課税等" data-kana="じぎょうしょぜい">
-  <h2>事業所税</h2><p>課税主体：地方税</p><p>課税対象：資産課税等</p><a href="https://example.com" target="_blank" rel="noopener noreferrer" class="btn">詳細を見る</a>
+
+<article class="card" data-authority="3文字" data-kana="しぶや">
+  <h2>渋谷区</h2><a href="https://www.city.shibuya.tokyo.jp/" target="_blank" rel="noopener noreferrer" class="btn">詳細を見る</a>
 </article>
-<article class="card" data-authority="地方税" data-category="資産課税等" data-kana="としけいかくぜい">
-  <h2>都市計画税</h2><p>課税主体：地方税</p><p>課税対象：資産課税等</p><a href="https://example.com" target="_blank" rel="noopener noreferrer" class="btn">詳細を見る</a>
+
+<article class="card" data-authority="3文字" data-kana="しんじゅく">
+  <h2>新宿区</h2><a href="https://www.city.shinjuku.lg.jp/" target="_blank" rel="noopener noreferrer" class="btn">詳細を見る</a>
 </article>
-<article class="card" data-authority="地方税" data-category="資産課税等" data-kana="すいりちえきぜい">
-  <h2>水利地益税</h2><p>課税主体：地方税</p><p>課税対象：資産課税等</p><a href="https://example.com" target="_blank" rel="noopener noreferrer" class="btn">詳細を見る</a>
+
+<article class="card" data-authority="3文字" data-kana="すぎなみ">
+  <h2>杉並区</h2><a href="https://www.city.suginami.tokyo.jp/" target="_blank" rel="noopener noreferrer" class="btn">詳細を見る</a>
 </article>
-<article class="card" data-authority="地方税" data-category="資産課税等" data-kana="きょうどうしせつぜい">
-  <h2>共同施設税</h2><p>課税主体：地方税</p><p>課税対象：資産課税等</p><a href="https://example.com" target="_blank" rel="noopener noreferrer" class="btn">詳細を見る</a>
+
+<article class="card" data-authority="3文字" data-kana="すみだ">
+  <h2>墨田区</h2><a href="https://www.city.sumida.lg.jp/" target="_blank" rel="noopener noreferrer" class="btn">詳細を見る</a>
 </article>
-<article class="card" data-authority="地方税" data-category="資産課税等" data-kana="たくちかいはつぜい">
-  <h2>宅地開発税</h2><p>課税主体：地方税</p><p>課税対象：資産課税等</p><a href="https://example.com" target="_blank" rel="noopener noreferrer" class="btn">詳細を見る</a>
+
+<article class="card" data-authority="4文字" data-kana="せたがや">
+  <h2>世田谷区</h2><a href="https://www.city.setagaya.lg.jp/" target="_blank" rel="noopener noreferrer" class="btn">詳細を見る</a>
 </article>
-<article class="card" data-authority="地方税" data-category="資産課税等" data-kana="こくみんけんこうほけんぜい">
-  <h2>国民健康保険税</h2><p>課税主体：地方税</p><p>課税対象：資産課税等</p><a href="https://example.com" target="_blank" rel="noopener noreferrer" class="btn">詳細を見る</a>
+
+<article class="card" data-authority="3文字" data-kana="たいとう">
+  <h2>台東区</h2><a href="https://www.city.taito.tokyo.jp/" target="_blank" rel="noopener noreferrer" class="btn">詳細を見る</a>
 </article>
-<article class="card" data-authority="地方税" data-category="資産課税等" data-kana="ほうていがいもくてきぜい">
-  <h2>法定外目的税</h2><p>課税主体：地方税</p><p>課税対象：資産課税等</p><a href="https://example.com" target="_blank" rel="noopener noreferrer" class="btn">詳細を見る</a>
+
+<article class="card" data-authority="3文字" data-kana="ちゅうおう">
+  <h2>中央区</h2><a href="https://www.city.chuo.lg.jp/" target="_blank" rel="noopener noreferrer" class="btn">詳細を見る</a>
+</article>
+
+<article class="card" data-authority="4文字" data-kana="ちよだ">
+  <h2>千代田区</h2><a href="https://www.city.chiyoda.lg.jp/" target="_blank" rel="noopener noreferrer" class="btn">詳細を見る</a>
+</article>
+
+<article class="card" data-authority="3文字" data-kana="としま">
+  <h2>豊島区</h2><a href="https://www.city.toshima.lg.jp/" target="_blank" rel="noopener noreferrer" class="btn">詳細を見る</a>
+</article>
+
+<article class="card" data-authority="3文字" data-kana="なかの">
+  <h2>中野区</h2><a href="https://www.city.nakano.tokyo.jp/" target="_blank" rel="noopener noreferrer" class="btn">詳細を見る</a>
+</article>
+
+<article class="card" data-authority="3文字" data-kana="ねりま">
+  <h2>練馬区</h2><a href="https://www.city.nerima.tokyo.jp/" target="_blank" rel="noopener noreferrer" class="btn">詳細を見る</a>
+</article>
+
+<article class="card" data-authority="3文字" data-kana="ぶんきょう">
+  <h2>文京区</h2><a href="https://www.city.bunkyo.lg.jp/" target="_blank" rel="noopener noreferrer" class="btn">詳細を見る</a>
+</article>
+
+<article class="card" data-authority="2文字" data-kana="みなと">
+  <h2>港区</h2><a href="https://www.city.minato.tokyo.jp/" target="_blank" rel="noopener noreferrer" class="btn">詳細を見る</a>
+</article>
+
+<article class="card" data-authority="3文字" data-kana="めぐろ">
+  <h2>目黒区</h2><a href="https://www.city.meguro.tokyo.jp/" target="_blank" rel="noopener noreferrer" class="btn">詳細を見る</a>
+</article>
+
+<article class="card" data-authority="2文字" data-kana="きた">
+  <h2>北区</h2><a href="https://www.city.kita.tokyo.jp/" target="_blank" rel="noopener noreferrer" class="btn">詳細を見る</a>
 </article>
 
 </section>
