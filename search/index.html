@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>税金一覧 | GA4 Debug</title>
+  <title>絞り込み | GA4 Debug</title> 
 
   <!-- Google Tag Manager -->
   <script>
@@ -17,7 +17,6 @@
   </script>
   <!-- End Google Tag Manager -->
 
-  <!-- 共通CSS -->
   <link rel="stylesheet" href="/web-learning3/common/css/common.css" />
 </head>
 
@@ -33,24 +32,19 @@
   </noscript>
   <!-- End Google Tag Manager (noscript) -->
 
-  <!-- 共通ヘッダー -->
   <div id="header"></div>
   <script src="/web-learning3/common/header.js"></script>
 
   <main>
-    <h1>東京23区一覧</h1>
+    <h1>23区一覧</h1> 
 
-    <!-- 絞り込み・並び替え -->
     <section class="filter">
-
-      <!-- 文字数 -->
       <div class="checkbox-group">
         <label><input type="checkbox" name="authority" value="2文字"> 2文字</label>
         <label><input type="checkbox" name="authority" value="3文字"> 3文字</label>
         <label><input type="checkbox" name="authority" value="4文字"> 4文字</label>
       </div>
 
-      <!-- 並び替え -->
       <div class="sort">
         <label>
           並び替え：
@@ -61,110 +55,128 @@
       </div>
     </section>
 
-    <!-- カード一覧 -->
-   <section class="card-list">
+    <section class="card-list">
 
-<!-- ========== 区 ========== -->
 <article class="card" data-authority="3文字" data-kana="あだち">
-  <h2>足立区</h2><a href="https://www.city.adachi.tokyo.jp/" target="_blank" rel="noopener noreferrer" class="btn">詳細を見る</a>
+  <h2>足立区</h2>
+  <a href="https://www.city.adachi.tokyo.jp/" target="_blank" rel="noopener noreferrer" class="btn" data-city="足立区">詳細を見る</a>
 </article>
 
 <article class="card" data-authority="3文字" data-kana="あらかわ">
-  <h2>荒川区</h2><a href="https://www.city.arakawa.tokyo.jp/" target="_blank" rel="noopener noreferrer" class="btn">詳細を見る</a>
+  <h2>荒川区</h2>
+  <a href="https://www.city.arakawa.tokyo.jp/" target="_blank" rel="noopener noreferrer" class="btn" data-city="荒川区">詳細を見る</a>
 </article>
 
 <article class="card" data-authority="3文字" data-kana="いたばし">
-  <h2>板橋区</h2><a href="https://www.city.itabashi.tokyo.jp/" target="_blank" rel="noopener noreferrer" class="btn">詳細を見る</a>
+  <h2>板橋区</h2>
+  <a href="https://www.city.itabashi.tokyo.jp/" target="_blank" rel="noopener noreferrer" class="btn" data-city="板橋区">詳細を見る</a>
 </article>
 
 <article class="card" data-authority="4文字" data-kana="えどがわ">
-  <h2>江戸川区</h2><a href="https://www.city.edogawa.tokyo.jp/" target="_blank" rel="noopener noreferrer" class="btn">詳細を見る</a>
+  <h2>江戸川区</h2>
+  <a href="https://www.city.edogawa.tokyo.jp/" target="_blank" rel="noopener noreferrer" class="btn" data-city="江戸川区">詳細を見る</a>
 </article>
 
 <article class="card" data-authority="3文字" data-kana="おおた">
-  <h2>大田区</h2><a href="https://www.city.ota.tokyo.jp/" target="_blank" rel="noopener noreferrer" class="btn">詳細を見る</a>
+  <h2>大田区</h2>
+  <a href="https://www.city.ota.tokyo.jp/" target="_blank" rel="noopener noreferrer" class="btn" data-city="大田区">詳細を見る</a>
 </article>
 
 <article class="card" data-authority="3文字" data-kana="かつしか">
-  <h2>葛飾区</h2><a href="https://www.city.katsushika.lg.jp/" target="_blank" rel="noopener noreferrer" class="btn">詳細を見る</a>
+  <h2>葛飾区</h2>
+  <a href="https://www.city.katsushika.lg.jp/" target="_blank" rel="noopener noreferrer" class="btn" data-city="葛飾区">詳細を見る</a>
 </article>
 
 <article class="card" data-authority="2文字" data-kana="きた">
-  <h2>北区</h2><a href="https://www.city.kita.tokyo.jp/" target="_blank" rel="noopener noreferrer" class="btn">詳細を見る</a>
+  <h2>北区</h2>
+  <a href="https://www.city.kita.tokyo.jp/" target="_blank" rel="noopener noreferrer" class="btn" data-city="北区">詳細を見る</a>
 </article>
 
 <article class="card" data-authority="3文字" data-kana="こうとう">
-  <h2>江東区</h2><a href="https://www.city.koto.lg.jp/" target="_blank" rel="noopener noreferrer" class="btn">詳細を見る</a>
+  <h2>江東区</h2>
+  <a href="https://www.city.koto.lg.jp/" target="_blank" rel="noopener noreferrer" class="btn" data-city="江東区">詳細を見る</a>
 </article>
 
 <article class="card" data-authority="3文字" data-kana="しながわ">
-  <h2>品川区</h2><a href="https://www.city.shinagawa.tokyo.jp/" target="_blank" rel="noopener noreferrer" class="btn">詳細を見る</a>
+  <h2>品川区</h2>
+  <a href="https://www.city.shinagawa.tokyo.jp/" target="_blank" rel="noopener noreferrer" class="btn" data-city="品川区">詳細を見る</a>
 </article>
 
 <article class="card" data-authority="3文字" data-kana="しぶや">
-  <h2>渋谷区</h2><a href="https://www.city.shibuya.tokyo.jp/" target="_blank" rel="noopener noreferrer" class="btn">詳細を見る</a>
+  <h2>渋谷区</h2>
+  <a href="https://www.city.shibuya.tokyo.jp/" target="_blank" rel="noopener noreferrer" class="btn" data-city="渋谷区">詳細を見る</a>
 </article>
 
 <article class="card" data-authority="3文字" data-kana="しんじゅく">
-  <h2>新宿区</h2><a href="https://www.city.shinjuku.lg.jp/" target="_blank" rel="noopener noreferrer" class="btn">詳細を見る</a>
+  <h2>新宿区</h2>
+  <a href="https://www.city.shinjuku.lg.jp/" target="_blank" rel="noopener noreferrer" class="btn" data-city="新宿区">詳細を見る</a>
 </article>
 
 <article class="card" data-authority="3文字" data-kana="すぎなみ">
-  <h2>杉並区</h2><a href="https://www.city.suginami.tokyo.jp/" target="_blank" rel="noopener noreferrer" class="btn">詳細を見る</a>
+  <h2>杉並区</h2>
+  <a href="https://www.city.suginami.tokyo.jp/" target="_blank" rel="noopener noreferrer" class="btn" data-city="杉並区">詳細を見る</a>
 </article>
 
 <article class="card" data-authority="3文字" data-kana="すみだ">
-  <h2>墨田区</h2><a href="https://www.city.sumida.lg.jp/" target="_blank" rel="noopener noreferrer" class="btn">詳細を見る</a>
+  <h2>墨田区</h2>
+  <a href="https://www.city.sumida.lg.jp/" target="_blank" rel="noopener noreferrer" class="btn" data-city="墨田区">詳細を見る</a>
 </article>
 
 <article class="card" data-authority="4文字" data-kana="せたがや">
-  <h2>世田谷区</h2><a href="https://www.city.setagaya.lg.jp/" target="_blank" rel="noopener noreferrer" class="btn">詳細を見る</a>
+  <h2>世田谷区</h2>
+  <a href="https://www.city.setagaya.lg.jp/" target="_blank" rel="noopener noreferrer" class="btn" data-city="世田谷区">詳細を見る</a>
 </article>
 
 <article class="card" data-authority="3文字" data-kana="たいとう">
-  <h2>台東区</h2><a href="https://www.city.taito.tokyo.jp/" target="_blank" rel="noopener noreferrer" class="btn">詳細を見る</a>
+  <h2>台東区</h2>
+  <a href="https://www.city.taito.tokyo.jp/" target="_blank" rel="noopener noreferrer" class="btn" data-city="台東区">詳細を見る</a>
 </article>
 
 <article class="card" data-authority="3文字" data-kana="ちゅうおう">
-  <h2>中央区</h2><a href="https://www.city.chuo.lg.jp/" target="_blank" rel="noopener noreferrer" class="btn">詳細を見る</a>
+  <h2>中央区</h2>
+  <a href="https://www.city.chuo.lg.jp/" target="_blank" rel="noopener noreferrer" class="btn" data-city="中央区">詳細を見る</a>
 </article>
 
 <article class="card" data-authority="4文字" data-kana="ちよだ">
-  <h2>千代田区</h2><a href="https://www.city.chiyoda.lg.jp/" target="_blank" rel="noopener noreferrer" class="btn">詳細を見る</a>
+  <h2>千代田区</h2>
+  <a href="https://www.city.chiyoda.lg.jp/" target="_blank" rel="noopener noreferrer" class="btn" data-city="千代田区">詳細を見る</a>
 </article>
 
 <article class="card" data-authority="3文字" data-kana="としま">
-  <h2>豊島区</h2><a href="https://www.city.toshima.lg.jp/" target="_blank" rel="noopener noreferrer" class="btn">詳細を見る</a>
+  <h2>豊島区</h2>
+  <a href="https://www.city.toshima.lg.jp/" target="_blank" rel="noopener noreferrer" class="btn" data-city="豊島区">詳細を見る</a>
 </article>
 
 <article class="card" data-authority="3文字" data-kana="なかの">
-  <h2>中野区</h2><a href="https://www.city.nakano.tokyo.jp/" target="_blank" rel="noopener noreferrer" class="btn">詳細を見る</a>
+  <h2>中野区</h2>
+  <a href="https://www.city.nakano.tokyo.jp/" target="_blank" rel="noopener noreferrer" class="btn" data-city="中野区">詳細を見る</a>
 </article>
 
 <article class="card" data-authority="3文字" data-kana="ねりま">
-  <h2>練馬区</h2><a href="https://www.city.nerima.tokyo.jp/" target="_blank" rel="noopener noreferrer" class="btn">詳細を見る</a>
+  <h2>練馬区</h2>
+  <a href="https://www.city.nerima.tokyo.jp/" target="_blank" rel="noopener noreferrer" class="btn" data-city="練馬区">詳細を見る</a>
 </article>
 
 <article class="card" data-authority="3文字" data-kana="ぶんきょう">
-  <h2>文京区</h2><a href="https://www.city.bunkyo.lg.jp/" target="_blank" rel="noopener noreferrer" class="btn">詳細を見る</a>
+  <h2>文京区</h2>
+  <a href="https://www.city.bunkyo.lg.jp/" target="_blank" rel="noopener noreferrer" class="btn" data-city="文京区">詳細を見る</a>
 </article>
 
 <article class="card" data-authority="2文字" data-kana="みなと">
-  <h2>港区</h2><a href="https://www.city.minato.tokyo.jp/" target="_blank" rel="noopener noreferrer" class="btn">詳細を見る</a>
+  <h2>港区</h2>
+  <a href="https://www.city.minato.tokyo.jp/" target="_blank" rel="noopener noreferrer" class="btn" data-city="港区">詳細を見る</a>
 </article>
 
 <article class="card" data-authority="3文字" data-kana="めぐろ">
-  <h2>目黒区</h2><a href="https://www.city.meguro.tokyo.jp/" target="_blank" rel="noopener noreferrer" class="btn">詳細を見る</a>
+  <h2>目黒区</h2>
+  <a href="https://www.city.meguro.tokyo.jp/" target="_blank" rel="noopener noreferrer" class="btn" data-city="目黒区">詳細を見る</a>
 </article>
 
 </section>
   </main>
 
-  <!-- 共通フッター -->
   <div id="footer"></div>
   <script src="/web-learning3/common/footer.js"></script>
-
-  <!-- 絞り込み・並び替えJS -->
   <script src="./js/filter.js"></script>
 
 </body>
